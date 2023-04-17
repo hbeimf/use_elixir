@@ -30,6 +30,8 @@ defmodule Demo.MixProject do
                 # redisc: :permanent,
                 # gwc: :permanent,
                 # elink: :permanent,
+                use_bigquery: :permanent,
+                mix_new_myapp: :permanent,
               ]
           ]
       ]
