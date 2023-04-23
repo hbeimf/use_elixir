@@ -20,7 +20,7 @@ rel:
 
 run:
 	# mix deps.get
-	# HEX_HTTP_CONCURRENCY=3 HEX_HTTP_TIMEOUT=1200 mix deps.get
+	HEX_HTTP_CONCURRENCY=3 HEX_HTTP_TIMEOUT=1200 mix deps.get
 	iex --name "$(NODENAME)@127.0.0.1" --cookie "$(NODENAME)_cookie" -S mix
 
 dep:
