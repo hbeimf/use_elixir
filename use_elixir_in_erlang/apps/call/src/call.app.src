@@ -1,12 +1,11 @@
-{application, use_elixir_in_erlang,
+{application, call,
  [{description, "An OTP application"},
   {vsn, "0.1.0"},
   {registered, []},
-  {mod, {use_elixir_in_erlang_app, []}},
+  {mod, {call_app, []}},
   {applications,
    [kernel,
     stdlib
-    , call
    ]},
   {env,[]},
   {modules, []},
