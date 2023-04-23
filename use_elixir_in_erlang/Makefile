@@ -1,5 +1,5 @@
-# TMP_PATH:=/usr/local/erlang_23.3:/usr/local/erlang_23.3/bin:$(PATH)
-TMP_PATH:=/usr/local/erlang_22.3:/usr/local/erlang_22.3/bin:$(PATH)
+TMP_PATH:=/usr/local/erlang_23.3:/usr/local/erlang_23.3/bin:$(PATH)
+# TMP_PATH:=/usr/local/erlang_22.3:/usr/local/erlang_22.3/bin:$(PATH)
 # TMP_PATH:=/usr/local/erlang_20.3:/usr/local/erlang_20.3/bin:$(PATH)
 # TMP_PATH:=/usr/local/erlang_22.3:/usr/local/erlang_22.3/bin:$(PATH)
 
@@ -55,8 +55,8 @@ dev_node2:
 	rm -rf ./$(PROJECT)_dev_node2_v$(VERSION)
 
 run:
-# 	rm config.ini
-	# cp ./config.c11.ini ./config.ini
+	$(REBAR3) install_deps
+	$(REBAR3) compile
 	$(REBAR3) shell --name $(NODENAME)@127.0.0.1 --setcookie $(NODENAME)_cookie
 
 # rel: release_c1_node1
