@@ -5,4 +5,8 @@ $ cd apps
 $ rebar3 new app call
 
 
+$ ./rebar3 install_deps
+$ ./rebar3 compile
+
+
 
